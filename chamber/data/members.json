@@ -1,0 +1,20 @@
+{
+    "members": [
+        {
+            "name": "Fun Fair",
+            "address": "Laloi Ave",
+            "phone": "(233) 356-2104",
+            "website": "#",
+            "image": "images/funfair.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Swims",
+            "address": " Jamestown, FT 56789",
+            "phone": "(233) 654-7890",
+            "website": "https://greenfarms.com",
+            "image": "images/swims.jpg",
+            "membership": 2
+        }
+    ]
+}
