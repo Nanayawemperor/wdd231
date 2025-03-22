@@ -1,45 +1,61 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const membersContainer = document.getElementById("members-container");
-    const gridViewBtn = document.getElementById("grid-view");
-    const listViewBtn = document.getElementById("list-view");
+// Weather API Fetch
+const apiKey = '618aa18ac77b340902a149db24d45a74';
+const city = 'San Miguel,SV';
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
 
-    fetch("data/members.json")
-        .then(response => response.json())
-        .then(data => displayMembers(data.members))
-        .catch(error => console.error("Error loading members:", error));
+async function getWeather() {
+    try {
+        const response = await fetch(weatherUrl);
+        const data = await response.json();
+        document.getElementById('temp').textContent = Math.round(data.main.temp);
+        document.getElementById('desc').textContent = data.weather[0].description;
 
-    function displayMembers(members) {
-        membersContainer.innerHTML = "";
+        const forecastResponse = await fetch(forecastUrl);
+        const forecastData = await forecastResponse.json();
+        const forecastList = document.getElementById('forecast');
 
-        members.forEach(member => {
-            const memberCard = document.createElement("div");
-            memberCard.classList.add("member-card");
+        forecastList.innerHTML = "";
+        for (let i = 0; i < 3; i++) {
+            let day = forecastData.list[i * 8]; // Approx every 24h
+            let item = document.createElement('li');
+            item.textContent = `📆 ${new Date(day.dt_txt).toLocaleDateString()} - 🌡 ${Math.round(day.main.temp)}°F`;
+            forecastList.appendChild(item);
+        }
+    } catch (error) {
+        console.error("Weather API error:", error);
+    }
+}
 
-            memberCard.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name} logo">
+getWeather();
+
+// Fetch and Display Spotlight Members
+async function getSpotlights() {
+    try {
+        const response = await fetch('data/members.json');
+        const data = await response.json();
+        const goldSilverMembers = data.members.filter(member => member.membership === 'gold' || member.membership === 'silver');
+
+        const selectedMembers = goldSilverMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+        const spotlightContainer = document.getElementById('spotlight-container');
+        spotlightContainer.innerHTML = "";
+
+        selectedMembers.forEach(member => {
+            let card = document.createElement('div');
+            card.classList.add('spotlight-card');
+            card.innerHTML = `
                 <h3>${member.name}</h3>
+                <img src="${member.logo}" alt="${member.name} Logo" width="100">
                 <p>${member.address}</p>
-                <p>${member.phone}</p>
+                <p>📞 ${member.phone}</p>
                 <a href="${member.website}" target="_blank">Visit Website</a>
-                <span class="membership-level level-${member.membership}">${getMembershipLevel(member.membership)}</span>
             `;
-
-            membersContainer.appendChild(memberCard);
+            spotlightContainer.appendChild(card);
         });
+    } catch (error) {
+        console.error("Error loading members:", error);
     }
+}
 
-    function getMembershipLevel(level) {
-        const levels = {1: "Member", 2: "Silver", 3: "Gold"};
-        return levels[level] || "Member";
-    }
-
-    gridViewBtn.addEventListener("click", () => {
-        membersContainer.classList.remove("list-view");
-        membersContainer.classList.add("grid-view");
-    });
-
-    listViewBtn.addEventListener("click", () => {
-        membersContainer.classList.remove("grid-view");
-        membersContainer.classList.add("list-view");
-    });
-});
+getSpotlights();

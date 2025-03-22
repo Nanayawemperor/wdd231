@@ -2,19 +2,27 @@
     "members": [
         {
             "name": "Fun Fair",
-            "address": "Laloi Ave",
-            "phone": "(233) 356-2104",
-            "website": "#",
             "image": "images/funfair.jpg",
+            "phone": "(233) 356-2104",
+            "address": "Laloi Ave",
+            "website": "https://techsolutions.com",
             "membership": 3
         },
         {
             "name": "Swims",
-            "address": " Jamestown, FT 56789",
-            "phone": "(233) 654-7890",
-            "website": "https://greenfarms.com",
             "image": "images/swims.jpg",
+            "phone": "(233) 654-7890",
+            "address": " Jamestown, FT 56789",
+            "website": "https://greenfarms.com",
             "membership": 2
+        },
+        {
+            "name": "San Miguel",
+            "image": "images/hero.jpg",
+            "phone": "(233) 356-2104",
+            "address": "Laloi Ave",
+            "website": "https://techsolutions.com",
+            "membership": 1
         }
     ]
 }
