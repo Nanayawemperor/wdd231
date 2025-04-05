@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmanuel Okyere</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header>
+    <div class="left">
+        <img src="images/profile.jpg" alt="Emmanuel Okyere">
+        <h1>Emmanuel Okyere</h1>
+      </div>
+      <div class="hamburger" onclick="toggleNav()">☰</div>
+  </header>
+  <nav id="mainNav">
+    <a href="#" class="active">Home</a>
+    <a href="#">Chamber</a>
+    <a href="#">Final</a>
+    <a href="#">GitHub Profile</a>
+    <a href="#">LinkedIn</a>
+  </nav>
+  <main>
+    <div class="section-grid">
+      <div class="card">
+        <h2>Course Work</h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Accra, Ghana</h2>
+        <img src="images/independence.jpeg" alt="Independence Square">
+        <p style="text-align: center;">Independence Square</p>
+      </div>
+    </div>
+
+    <div class="certificate-section">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="filters">
+        <button onclick="filterCourses('all')">All</button>
+        <button onclick="filterCourses('cse')">CSE</button>
+        <button onclick="filterCourses('wdd')">WDD</button>
+      </div>
+      <div class="course-buttons">
+        <button class="cse">CSE 110</button>
+        <button class="wdd">WDD 130</button>
+        <button class="cse">CSE 111</button>
+        <button class="cse">CSE 210</button>
+        <button class="wdd">WDD 131</button>
+        <button class="wdd">WDD 231</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>
+      &copy;2025 🏁 Emmanuel Okyere 🏁 Ghana<br>
+      Last Update: <span id="lastUpdate"></span>
+    </p>
+    <img src="images/independence.jpeg" alt="Independence Square">
+  </footer>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
