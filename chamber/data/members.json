@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "Accra Electronics",
+        "address": "123 Kwame Nkrumah Ave, Accra",
+        "phone": "+233 30 222 3344",
+        "website": "https://accraelectronics.com",
+        "image": "accra-electronics.jpg",
+        "membership": 3,
+        "description": "Leading provider of electronic goods."
+      },
+      {
+        "name": "Ghana Gourmet Foods",
+        "address": "456 Independence Rd, Accra",
+        "phone": "+233 24 987 6543",
+        "website": "https://ghanagourmet.com",
+        "image": "ghana-gourmet.jpg",
+        "membership": 2,
+        "description": "Delicious traditional Ghanaian cuisine."
+      },
+      {
+        "name": "West Coast IT",
+        "address": "789 Ring Road Central, Accra",
+        "phone": "+233 50 123 4567",
+        "website": "https://westcoastit.com",
+        "image": "west-coast-it.jpg",
+        "membership": 1,
+        "description": "IT services and solutions for businesses."
+      },
+      {
+        "name": "Accra Fitness Hub",
+        "address": "321 Osu Rd, Accra",
+        "phone": "+233 27 998 7654",
+        "website": "https://accrafitnesshub.com",
+        "image": "fitness-hub.jpg",
+        "membership": 3,
+        "description": "A premier gym and wellness center."
+      },
+      {
+        "name": "Ghana Arts and Crafts",
+        "address": "654 Adabraka Street, Accra",
+        "phone": "+233 26 555 0001",
+        "website": "https://ghanaarts.com",
+        "image": "arts-crafts.jpg",
+        "membership": 2,
+        "description": "Handmade Ghanaian crafts and art."
+      },
+      {
+        "name": "Sunrise Bookstore",
+        "address": "987 Makola Market Lane, Accra",
+        "phone": "+233 55 876 5432",
+        "website": "https://sunrisebooks.com",
+        "image": "sunrise-bookstore.jpg",
+        "membership": 1,
+        "description": "Books, stationery, and educational materials."
+      },
+      {
+        "name": "Accra Media Agency",
+        "address": "111 Cantonments Rd, Accra",
+        "phone": "+233 20 333 4444",
+        "website": "https://accra-media.com",
+        "image": "media-agency.jpg",
+        "membership": 3,
+        "description": "Marketing and media production experts."
+      }
+    ]
+  }
+  

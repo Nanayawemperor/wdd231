@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accra Chamber of Commerce Directory">
+  <meta name="author" content="Emmanuel Okyere">
+  <meta property="og:title" content="Accra Chamber Directory">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="#">
+  <meta property="og:url" content="https://nanayawemperor.github.io/wdd231/chamber/directory.html">
+  <title>Accra Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="icon" href="images/favicon.ico" type="image/png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Accra Chamber Logo">
+      <h1>Accra Chamber of Commerce</h1>
+    </div>
+    <div class="hamburger" onclick="toggleNav(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav id="mainNav">
+      <a href="../index.html" class="active">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="events.html">Events</a>
+      <a href="join.html">Join</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Supporting Local Businesses in Accra</h2>
+      <p>Join the community. Grow together.</p>
+      <a href="join.html" class="cta-button">Join Now</a>
+    </section>
+    <section id="weather">
+        <h2>Current Weather</h2>
+        <p>Temperature: <span id="current-temp"></span></p>
+        <figure>
+          <img id="weather-icon" src="☁️" alt="weather">
+          <figcaption id="weather-desc"></figcaption>
+        </figure>
+        <div id="forecast">
+          <h3>3-Day Forecast</h3>
+          <ul id="forecast-list"></ul>
+        </div>
+    </section>
+    <section class="spotlight-section">
+      <h2>Featured Members</h2>
+      <div class="spotlight-cards" id="spotlightContainer">
+
+      </div>
+    </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Business Networking – April 15</li>
+        <li>Marketing Workshop – April 22</li>
+        <li>Startup Support Panel – April 29</li>
+      </ul>
+      <a href="events.html">See Full Calendar</a>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+        <h4>Accra Chamber of Commerce</h4>
+        <ul>
+            <li>Laloi Ave.</li>
+            <li>info@accrachamber.org</li>
+            <li>+233 54 900 2429</li>
+        </ul>
+    </section>
+
+    <img src="images/favicon.ico" alt="Ghana Flag">
+  </footer>
+
+  <script src="scripts/chamber.js"></script>
+</body>
+</html>
