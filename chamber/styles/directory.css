@@ -98,4 +98,19 @@
     margin-top: 2rem;
     font-size: 0.9rem;
   }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
   
+  .list {
+    display: block;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+  }
