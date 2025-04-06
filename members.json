@@ -1,0 +1,31 @@
+[
+    {
+      "name": "GTP Premium Fashion Brand",
+      "image": "images/gold-member-1.jpeg",
+      "description": "Premium fashion house supporting local artisans.",
+      "membership": "gold",
+      "website URL": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcitinewsroom.com%2F2022%2F08%2Fgtp-set-to-become-a-premium-fashion-brand%2F&psig=AOvVaw3od2G12sOM6xtE4QEuK4IC&ust=1744023850914000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPDP0KKhw4wDFQAAAAAdAAAAABAP"
+    },
+    {
+      "name": "Accra Tech Hub",
+      "image": "images/silver-member1.jpg",
+      "description": "Empowering startups and entrepreneurs in Accra.",
+      "membership": "silver",
+      "website URL": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ghanatechlab.com%2F&psig=AOvVaw2v-78GW7T7vhh06umzedTm&ust=1744013909514000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNjirJGhw4wDFQAAAAAdAAAAABAE"
+    },
+    {
+      "name": "Jamestown Coffee Roasters",
+      "image": "images/gold-member2.jpeg",
+      "description": "Your daily dose of locally brewed excellence.",
+      "membership": "gold",
+      "website URL": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fjamestowncoffeegh%2Fposts%2Fgood-coffee-made-in-ghana-jamestowncoffeecompany-ghana-insta-coffee-foodie%2F3143687605879189%2F&psig=AOvVaw2A3bqdrrzlYuIsds_2v9Vi&ust=1744014030481000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCloYShw4wDFQAAAAAdAAAAABAE"
+    },
+    {
+      "name": "Eco Clean Ghana",
+      "image": "images/silver-member2.jpg",
+      "description": "Eco-friendly cleaning solutions for homes and offices.",
+      "membership": "silver",
+      "website URL": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbelshawlimited.com%2F&psig=AOvVaw0LMmA2wu0nANpcVbeQJV_C&ust=1744023701898000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCID9s9ygw4wDFQAAAAAdAAAAABAE"
+    }
+  ]
+  
