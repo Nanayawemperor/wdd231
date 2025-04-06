@@ -47,8 +47,8 @@
   
   nav a:hover,
   nav a.active {
-    background-color: #f4a261;
-    color: #0a4d68;
+    background-color: #cdf461;
+    color: #000406;
   }
   
   .hamburger {
