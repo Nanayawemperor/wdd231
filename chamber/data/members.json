@@ -5,7 +5,7 @@
         "address": "123 Kwame Nkrumah Ave, Accra",
         "phone": "+233 30 222 3344",
         "website": "https://accraelectronics.com",
-        "image": "images/accra-electronics.jpg",
+        "image": "images/accra-electronics.webp",
         "membership": 3,
         "description": "Leading provider of electronic goods."
       },
@@ -14,7 +14,7 @@
         "address": "456 Independence Rd, Accra",
         "phone": "+233 24 987 6543",
         "website": "https://ghanagourmet.com",
-        "image": "images/ghana-gourmet.jpg",
+        "image": "images/ghana-gourmet.webp",
         "membership": 2,
         "description": "Delicious traditional Ghanaian cuisine."
       },
@@ -23,7 +23,7 @@
         "address": "789 Ring Road Central, Accra",
         "phone": "+233 50 123 4567",
         "website": "https://westcoastit.com",
-        "image": "images/west-coast-it.jpeg",
+        "image": "images/west-coast-it.webp",
         "membership": 1,
         "description": "IT services and solutions for businesses."
       },
@@ -41,7 +41,7 @@
         "address": "654 Adabraka Street, Accra",
         "phone": "+233 26 555 0001",
         "website": "https://ghanaarts.com",
-        "image": "images/arts-crafts.jpg",
+        "image": "images/arts-crafts.webp",
         "membership": 2,
         "description": "Handmade Ghanaian crafts and art."
       },
@@ -50,7 +50,7 @@
         "address": "987 Makola Market Lane, Accra",
         "phone": "+233 55 876 5432",
         "website": "https://sunrisebooks.com",
-        "image": "images/sunrise-bookstore.avif",
+        "image": "images/sunrise-bookstore.webp",
         "membership": 1,
         "description": "Books, stationery, and educational materials."
       },
@@ -59,7 +59,7 @@
         "address": "111 Cantonments Rd, Accra",
         "phone": "+233 20 333 4444",
         "website": "https://accra-media.com",
-        "image": "images/ama.jpeg",
+        "image": "images/ama.webp",
         "membership": 3,
         "description": "Marketing and media production experts."
       }

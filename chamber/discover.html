@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accra Chamber of Commerce Directory">
+  <meta name="author" content="Emmanuel Okyere">
+  <meta property="og:title" content="Accra Chamber Directory">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="#">
+  <meta property="og:url" content="https://nanayawemperor.github.io/wdd231/chamber/directory.html">
+  <title>Accra Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="stylesheet" href="styles/discover.css">
+  <link rel="stylesheet" href="styles/medium.css">
+
+
+  <link rel="icon" href="../images/favicon.ico" type="image/png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Accra Chamber Logo">
+      <h1>Accra Chamber of Commerce</h1>
+    </div>
+    <div class="hamburger" onclick="toggleNav(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav id="mainNav">
+      <a href="../index.html" >Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="discover.html" class="active">Discover</a>
+      <a href="join.html">Join</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="discover">
+    <section class="cards-grid">
+      <!-- Cards will be injected here via JS -->
+    </section>
+    <aside class="visit-message">
+      <!-- Last visit message appears here -->
+    </aside>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 Accra Chamber of Commerce</p>
+  </footer>
+
+  <script src="scripts/discover.js"></script>
+</body>
+</html>

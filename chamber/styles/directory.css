@@ -1,117 +1,77 @@
-/* Normalize CSS (optional - partial reset) */
-* {
-    box-sizing: border-box;
+/* Base styles for directory page */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
   header, footer {
-    background-color: #003366;
+    background-color: #114b67;
     color: #fff;
     padding: 1rem;
     text-align: center;
   }
- 
   
-  nav {
-    background-color: #005599;
+  nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
   }
   
   nav a {
     color: #fff;
-    padding: 0.75rem 1.5rem;
     text-decoration: none;
   }
   
-  nav a:hover {
-    background-color: #003f7f;
-  }
-  
-  /* Main Section */
-  main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+  .directory {
+    padding: 1rem;
   }
   
   .view-toggle {
-    display: flex;
-    justify-content: flex-end;
+    text-align: center;
     margin-bottom: 1rem;
-    gap: 0.5rem;
   }
   
   .view-toggle button {
     padding: 0.5rem 1rem;
-    border: none;
-    background-color: #007acc;
-    color: white;
+    margin: 0 0.5rem;
     cursor: pointer;
-    border-radius: 5px;
   }
   
-  .view-toggle button:hover {
-    background-color: #005fa3;
-  }
-  
-  .directory {
+  #members.grid-view {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
   }
   
-  .directory.grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  #members.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   
-  .directory.list {
-    display: block;
-  }
-  
-  .card {
-    background: white;
-    border-radius: 8px;
+  .member-card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
     padding: 1rem;
+    background: #f9f9f9;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
   
-  .card img {
-    max-width: 100px;
+  .member-card img {
+    width: 100px;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   
-  .card h3 {
+  .member-card h3 {
     margin: 0.5rem 0;
   }
   
-  footer {
-    margin-top: 2rem;
-    font-size: 0.9rem;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .list {
-    display: block;
-  }
-  
-  .card {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin: 10px;
-    text-align: center;
+  .view-toggle .active {
+    background-color: #333;
+    color: white;
   }

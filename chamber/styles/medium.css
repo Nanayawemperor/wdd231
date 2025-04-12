@@ -1,0 +1,45 @@
+/* Medium and large screen layout */
+@media (min-width: 641px) {
+    .discover {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  
+    .cards-grid {
+      flex: 3;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+      gap: 1.5rem;
+    }
+  
+    .visit-message {
+      flex: 1;
+      max-width: 300px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .cards-grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "card1 card2 card3 card4"
+        "card5 card6 card7 card8";
+    }
+  }
+  
+  .card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  @media (max-width: 640px) {
+    .card img:hover {
+      transform: none;
+    }
+  }
+  
